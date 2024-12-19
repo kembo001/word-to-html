@@ -1,6 +1,6 @@
 {
+  "homepage": "https://kembo001.github.io/word-to-html",
   "dependencies": {
-    "homepage": "https://kembo001.github.io/word-to-html",
     "body-parser": "^1.20.3",
     "cookie-parser": "^1.4.7",
     "dompurify": "^3.2.3",
@@ -16,5 +16,4 @@
     "predeploy": "npm run build",
     "deploy": "gh-pages -d build"
   }
-  
 }
