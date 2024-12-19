@@ -21,7 +21,7 @@ This project is a React-based web application inspired by WordHTML. It provides 
 
 1. Clone the repository:
    ```bash
-   git clone https://github.com/yourusername/wordhtml-clone.git
+   git clone https://github.com/kembo001/wordhtml-clone.git
    cd wordhtml-clone
    ```
 
