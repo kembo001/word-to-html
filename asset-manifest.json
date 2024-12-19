@@ -1,10 +1,10 @@
 {
   "files": {
-    "main.css": "/word-to-html/word-html/static/css/main.186fef27.css",
-    "main.js": "/word-to-html/word-html/static/js/main.9792ae9b.js",
-    "index.html": "/word-to-html/word-html/index.html",
-    "main.186fef27.css.map": "/word-to-html/word-html/static/css/main.186fef27.css.map",
-    "main.9792ae9b.js.map": "/word-to-html/word-html/static/js/main.9792ae9b.js.map"
+    "main.css": "/word-to-html/static/css/main.186fef27.css",
+    "main.js": "/word-to-html/static/js/main.9792ae9b.js",
+    "index.html": "/word-to-html/index.html",
+    "main.186fef27.css.map": "/word-to-html/static/css/main.186fef27.css.map",
+    "main.9792ae9b.js.map": "/word-to-html/static/js/main.9792ae9b.js.map"
   },
   "entrypoints": [
     "static/css/main.186fef27.css",
