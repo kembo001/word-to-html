@@ -1,8 +1,12 @@
 import React, { useState, useRef, useEffect } from "react";
 import Prism from "prismjs";
-import './App.css'
+import './App.css';
 import "prismjs/themes/prism.css"; // Import Prism.js CSS theme
+import { toast, ToastContainer } from "react-toastify";
+import "react-toastify/dist/ReactToastify.css";
 import { cleanHTML } from "./utils";
+
+
 
 function App() {
   const [content, setContent] = useState("");
@@ -78,7 +82,6 @@ function App() {
           border: "1px solid #ccc",
           padding: "10px",
           minHeight: "200px",
-          marginTop: "10px",
         }}
       ></div>
 
@@ -96,7 +99,6 @@ function App() {
             padding: "10px",
             minHeight: "200px",
             backgroundColor: "#f9f9f9",
-            marginTop: "10px",
             whiteSpace: "pre-wrap", // Ensures the code wraps properly
             wordWrap: "break-word", // Ensures long words wrap
           }}

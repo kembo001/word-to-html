@@ -26,13 +26,13 @@
 .wysiwyg-editor {
   border: 1px solid #ccc;
   padding: 10px;
-  min-height: 200px;
+
   outline: none;
   background-color: #fff;
 }
 
 .html-preview {
-  margin-top: 20px;
+
   border: 1px solid #ccc;
   padding: 10px;
   background-color: #f9f9f9;
@@ -49,4 +49,12 @@ pre.language-html code {
 .wysiwyg-editor{
   width: 850px;
   min-height: 500px;
+}
+
+.app-header h1{
+  text-align: center;
+}
+
+.app-footer p{
+  text-align: center;
 }
