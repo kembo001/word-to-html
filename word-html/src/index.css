@@ -3,7 +3,6 @@
 
 .app-container {
   font-family: Arial, sans-serif;
-  max-width: 800px;
   margin: auto;
   padding: 20px;
 }
@@ -37,9 +36,17 @@
   border: 1px solid #ccc;
   padding: 10px;
   background-color: #f9f9f9;
+  width: 850px;
+  height: 500px;
 }
 
 pre.language-html code {
   white-space: pre-wrap !important; /* Force wrapping for code blocks */
   word-break: break-word !important; /* Break long words if necessary */
+}
+
+
+.wysiwyg-editor{
+  width: 850px;
+  min-height: 500px;
 }

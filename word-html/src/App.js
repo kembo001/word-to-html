@@ -1,6 +1,6 @@
 import React, { useState, useRef, useEffect } from "react";
 import Prism from "prismjs";
-
+import './App.css'
 import "prismjs/themes/prism.css"; // Import Prism.js CSS theme
 import { cleanHTML } from "./utils";
 
@@ -65,27 +65,8 @@ function App() {
         <h1>Enhanced WordHTML Editor</h1>
       </header>
 
-      {/* Toolbar */}
-      <div className="toolbar">
-        <button onClick={() => formatText("bold")}>Bold</button>
-        <button onClick={() => formatText("italic")}>Italic</button>
-        <button onClick={() => formatText("underline")}>Underline</button>
-        <button onClick={() => formatText("insertUnorderedList")}>
-          Bullet List
-        </button>
-        <button onClick={() => formatText("insertOrderedList")}>
-          Number List
-        </button>
-        <button
-          onClick={() => {
-            const url = prompt("Enter URL:");
-            if (url) formatText("createLink", url);
-          }}
-        >
-          Add Link
-        </button>
-      </div>
 
+      <div className="editor-preview-container">
       {/* Editor */}
       <div
         ref={editorRef}
@@ -122,11 +103,11 @@ function App() {
         >
           <code className="language-html">{content}</code>
         </pre>
-      </div>
+      </div>   </div>
 
       {/* Footer */}
       <footer className="app-footer">
-        <p>&copy; 2024 WordHTML Clone by Adrian</p>
+        <p>&copy; 2024 Triton WordHTML </p>
       </footer>
     </div>
   );

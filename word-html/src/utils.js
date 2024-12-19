@@ -65,7 +65,9 @@ Array.from(tempDiv.querySelectorAll("li")).forEach((li) => {
       p.replaceWith(...p.childNodes); // Replace <p> with its content
     });
   });
-  
+//   ------------------------------------------------------------------------- NICHE CODE THAT COULD POSSIBLY CHANGE ANYTIME ---------------------------------------
+
+
   // Convert <p> tags with square brackets to <a> tags
   Array.from(tempDiv.querySelectorAll("p")).forEach((p) => {
     const match = p.textContent.trim().match(/^\[(.+?)\]$/); // Check if content is in [brackets]
@@ -88,6 +90,10 @@ Array.from(tempDiv.querySelectorAll("li")).forEach((li) => {
         ul.classList.add("uvp"); // Add the "uvp" class if preceded by <h1>
       }
     });
+
+//   ------------------------------------------------------------------------- NICHE CODE THAT COULD POSSIBLY CHANGE ANYTIME ---------------------------------------
+
+
   
     // Use DOMPurify to sanitize the cleaned HTML
     return DOMPurify.sanitize(tempDiv.innerHTML, {

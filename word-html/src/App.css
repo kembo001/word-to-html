@@ -1,0 +1,16 @@
+/* Container for the editor and preview */
+.editor-preview-container {
+  display: flex; /* Enables side-by-side layout */
+  gap: 20px; /* Adds space between the two boxes */
+}
+
+/* Editor and Preview Box Styles */
+.editor-box,
+.preview-box {
+  flex: 1; /* Ensures both boxes take up equal width */
+  border: 1px solid #ccc;
+  padding: 10px;
+  min-height: 300px; /* Adjust the height as needed */
+  overflow: auto; /* Adds scrollbars if content overflows */
+  background-color: #f9f9f9; /* Optional: adds a light background */
+}
