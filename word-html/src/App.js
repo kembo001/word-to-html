@@ -1,7 +1,8 @@
 import React, { useState, useRef, useEffect } from "react";
 import Prism from "prismjs";
-import DOMPurify from "dompurify";
+
 import "prismjs/themes/prism.css"; // Import Prism.js CSS theme
+import { cleanHTML } from "./utils";
 
 function App() {
   const [content, setContent] = useState("");
@@ -14,34 +15,8 @@ function App() {
     editorRef.current.focus(); // Refocus the editor after formatting
   };
 
-  // Normalize and clean HTML content
-  const cleanHTML = (html) => {
-    const tempDiv = document.createElement("div");
-    tempDiv.innerHTML = html;
-
-    // Remove unnecessary span tags
-    Array.from(tempDiv.querySelectorAll("span")).forEach((span) => {
-      if (!span.attributes.length) {
-        span.replaceWith(span.innerHTML); // Replace <span> with its innerHTML
-      }
-    });
-
-    // Remove aria-level attributes
-    Array.from(tempDiv.querySelectorAll("[aria-level]")).forEach((node) => {
-      node.removeAttribute("aria-level");
-    });
-
-    // Remove unnecessary br tags
-    Array.from(tempDiv.querySelectorAll("br")).forEach((br) => {
-      br.remove(); // Completely remove <br> tags
-    });
-
-    // Use DOMPurify to sanitize the cleaned HTML
-    return DOMPurify.sanitize(tempDiv.innerHTML, {
-      ALLOWED_TAGS: ["h1", "h2", "h3", "h4", "h5", "h6", "p", "ul", "ol", "li", "a", "b", "i", "u", "strong", "em"],
-      ALLOWED_ATTR: ["href"],
-    });
-  };
+  // gere
+  
 
   // Handle input in the editor
   const handleInput = (e) => {
